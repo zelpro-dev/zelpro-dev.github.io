@@ -4,7 +4,12 @@
   --background: #121212;
   --title: #f3f3f3;
   --container: hsla(0, 0%, 9%, 0.773);
-  --line: hsla(0, 0%, 19%, 0.415);
+  --line: hsla(0, 0%, 19%, 0.464);
+
+  --light-red: #ffcece;
+
+  --width-about: 350px;
+  --height-about: 280px;
 
 
   --font: "montserrat", sans-serif;
@@ -17,7 +22,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 body {
@@ -32,29 +37,40 @@ header {
 }
 
 main {
-  padding: 0 0 1.5rem 1.5rem;
+  padding: 0 0 120px 120px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
   font-family: var(--font);
   color: var(--title);
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: 200;
   font-size: x-large;
 }
 
-h2, h3 {
+h3 {
   font-size: large;
-  font-weight: 200;
+  font-weight: 500;
+  margin-bottom: 19px;
+}
+
+p {
+  font-size: smaller;
+  font-weight: 300;
+}
+
+.english {
+  text-decoration: none;
+  color: #ec9effcd;
 }
 
 .container {
-  width: 190px;
-  height: 254px;
+  width: var(--width-about);
+  height: var(--height-about);
   border-radius: 20px;
   background: var(--container);
   border: 1px solid var(--line);
-  padding: 0.9rem;
+  padding: 1.9rem;
 }
