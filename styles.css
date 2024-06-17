@@ -8,9 +8,6 @@
 
   --light-red: #ffcece;
 
-  --width-about: 350px;
-  --height-about: 280px;
-
 
   --font: "montserrat", sans-serif;
 }
@@ -33,11 +30,13 @@ header {
   width: screen;
   justify-content: center;
   display: flex;
-  padding: 0.9rem;
+  padding: 1.9rem;
 }
 
 main {
-  padding: 0 0 120px 120px;
+  padding: 0 120px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 h1, h2, h3, p {
@@ -64,13 +63,29 @@ p {
 .english {
   text-decoration: none;
   color: #ec9effcd;
+  border-bottom: 1px transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.english:hover {
+  border-bottom: 1px solid;
 }
 
 .container {
-  width: var(--width-about);
-  height: var(--height-about);
+  width: 350px;
   border-radius: 20px;
   background: var(--container);
   border: 1px solid var(--line);
   padding: 1.9rem;
+  margin: 0.6rem;
+}
+
+#copyright {
+  align-self: self-end;
+  width: 350px;
+  height: 90px;
+}
+
+#general {
+  width: 1000px;
 }
