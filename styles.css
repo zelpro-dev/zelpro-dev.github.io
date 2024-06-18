@@ -33,10 +33,9 @@ header {
   padding: 1.9rem;
 }
 
-main {
+main, footer {
   padding: 0 120px;
   display: flex;
-  flex-wrap: wrap;
 }
 
 h1, h2, h3, p {
@@ -60,8 +59,11 @@ p {
   font-weight: 300;
 }
 
-.english {
+a {
   text-decoration: none;
+}
+
+.english {
   color: #ec9effcd;
   border-bottom: 1px transparent;
   transition: border-bottom 0.3s ease;
@@ -72,20 +74,39 @@ p {
 }
 
 .container {
-  width: 350px;
   border-radius: 20px;
   background: var(--container);
   border: 1px solid var(--line);
   padding: 1.9rem;
   margin: 0.6rem;
+  overflow: hidden;
+}
+
+#about {
+  width: 350px;
+  height: 350px;
 }
 
 #copyright {
-  align-self: self-end;
   width: 350px;
   height: 90px;
 }
 
 #general {
-  width: 1000px;
+  width: 760px;
+}
+
+#github-icon, #linkedin-icon {
+  font-size: x-large;
+  color: #f3f3f398;
+}
+
+#html-icon, #css-icon, #js-icon, #node-icon, svg {
+  font-size: xx-large;
+  color: #f3f3f398;
+}
+
+#github-icon:hover, #linkedin-icon:hover {
+  color: #f3f3f3;
+  transition: color 0.3s ease;
 }
