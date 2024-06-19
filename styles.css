@@ -98,8 +98,15 @@ a {
   width: auto;
 }
 
-.skills p {
-  margin-top: 20px;
+.techs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.strong-normal {
+  font-weight: 400;
 }
 
 #github-icon, #linkedin-icon {
@@ -108,7 +115,7 @@ a {
 }
 
 #html-icon, #css-icon, #js-icon, #node-icon, #react-icon, svg {
-  font-size: xx-large;
+  font-size: x-large;
   color: var(--white-icon);
 }
 
