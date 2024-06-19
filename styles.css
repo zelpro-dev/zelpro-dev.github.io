@@ -19,10 +19,6 @@
   margin: 0;
 }
 
-html {
-  overflow: hidden;
-}
-
 body {
   background-color: var(--background);
 }
@@ -34,7 +30,13 @@ header {
   padding: 1.9rem;
 }
 
-main, footer {
+main {
+  padding: 0 120px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
   padding: 0 120px;
   display: flex;
 }
@@ -90,14 +92,13 @@ a {
 
 #copyright {
   width: 350px;
-  height: 90px;
 }
 
-#general {
-  width: 760px;
+.skills {
+  width: auto;
 }
 
-#general p {
+.skills p {
   margin-top: 20px;
 }
 
@@ -114,4 +115,45 @@ a {
 #github-icon:hover, #linkedin-icon:hover {
   color: var(--white);
   transition: color 0.3s ease;
+}
+
+@media (max-width: 1000px) {
+  #about {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  main, footer {
+    padding: 0 60px;
+  }
+}
+
+
+
+/* Scrollbar styles */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--container);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light-red);
+}
+
+/* Scrollbar styles for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) var(--container);
 }
