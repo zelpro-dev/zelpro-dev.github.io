@@ -8,9 +8,10 @@
   --white: #f3f3f3;
   --light-red: #ffcece;
   --white-icon: #f3f3f398;
+  --white-icon-tr: #f3f3f34c;
 
 
-  --font: "montserrat", sans-serif;
+  --font: "montserrat", system-ui, sans-serif;
 }
 
 * {
@@ -41,7 +42,7 @@ footer {
   display: flex;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, span {
   font-family: var(--font);
   color: var(--white);
 }
@@ -55,6 +56,10 @@ h3 {
   font-size: large;
   font-weight: 500;
   margin-bottom: 19px;
+}
+
+span {
+  color: var(--white-icon);
 }
 
 p {
@@ -102,8 +107,12 @@ a {
   width: 180px;
 }
 
+.next-steps p, .next-steps i {
+  color: var(--white-icon-tr);
+}
+
 .strong-normal {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .techs > p {
