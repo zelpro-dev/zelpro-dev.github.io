@@ -125,7 +125,7 @@ a {
   color: var(--white-icon);
 }
 
-#github-icon:hover, #linkedin-icon:hover {
+#github-icon:hover, #linkedin-icon:hover, #email-icon:hover {
   color: var(--white);
   transition: color 0.3s ease;
 }
@@ -142,6 +142,7 @@ a {
   .about {
     width: 100%;
   }
+
 }
 
 
