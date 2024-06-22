@@ -6,7 +6,9 @@
   --line: hsla(0, 0%, 19%, 0.464);
   
   --white: #f3f3f3;
-  --light-red: #ffcece;
+  --pink: #ec9effcd;
+  --blue: #9efcffcd;
+  
   --white-icon: #f3f3f398;
   --white-icon-tr: #f3f3f34c;
 
@@ -18,6 +20,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+*::selection {
+  background-color: var(--line);
+  color: var(--pink);
 }
 
 body {
@@ -72,7 +79,7 @@ a {
 }
 
 .english {
-  color: #ec9effcd;
+  color: var(--pink);
   border-bottom: 1px transparent;
   transition: border-bottom 0.3s ease;
 }
@@ -125,7 +132,7 @@ a {
   color: var(--white-icon);
 }
 
-#github-icon:hover, #linkedin-icon:hover, #email-icon:hover {
+#github-icon:hover, #linkedin-icon:hover, .about svg:hover {
   color: var(--white);
   transition: color 0.3s ease;
 }
