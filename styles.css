@@ -78,13 +78,13 @@ a {
   text-decoration: none;
 }
 
-.english {
+.english-cert {
   color: var(--pink);
   border-bottom: 1px transparent;
   transition: border-bottom 0.3s ease;
 }
 
-.english:hover {
+.english-cert:hover {
   border-bottom: 1px solid;
 }
 
@@ -102,7 +102,6 @@ a {
 }
 
 .skills {
-  width: auto;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -111,7 +110,7 @@ a {
 .techs {
   display: flex;
   justify-content: space-between;
-  width: 180px;
+  width: 200px;
 }
 
 .next-steps p, .next-steps i {
@@ -130,6 +129,14 @@ a {
 .icon, svg {
   font-size: x-large;
   color: var(--white-icon);
+}
+
+.gallery {
+  width: 530px;
+  height: 230px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background-color: var(--container);
 }
 
 #github-icon:hover, #linkedin-icon:hover, .about svg:hover {
