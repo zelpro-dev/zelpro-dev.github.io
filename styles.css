@@ -8,6 +8,7 @@
   --white: #f3f3f3;
   --pink: #ec9effcd;
   --blue: #9efcffcd;
+  --green: #74fb65cd;
   
   --white-icon: #f3f3f398;
   --white-icon-tr: #f3f3f34c;
@@ -51,7 +52,7 @@ footer {
   justify-content: center;
 }
 
-h1, h2, h3, p, span {
+h1, h2, h3, p, span, li {
   font-family: var(--font);
   color: var(--white);
 }
@@ -110,6 +111,21 @@ a {
   width: 260px;
 }
 
+.rightnow {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightnow li {
+  font-size: small;
+}
+
+.more {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
 .techs {
   display: flex;
   justify-content: space-between;
@@ -155,7 +171,7 @@ a {
     padding: 0 60px;
   }
 
-  .about, .skills, .projects {
+  .about, .skills, .projects, .rightnow, .more {
     width: 100%;
   }
 
