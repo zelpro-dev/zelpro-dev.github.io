@@ -41,12 +41,14 @@ header {
 main {
   padding: 0 120px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 footer {
   padding: 0 120px;
   display: flex;
+  justify-content: center;
 }
 
 h1, h2, h3, p, span {
@@ -104,13 +106,13 @@ a {
 .skills {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 19px;
+  width: 260px;
 }
 
 .techs {
   display: flex;
   justify-content: space-between;
-  width: 200px;
 }
 
 .next-steps p, .next-steps i {
@@ -132,8 +134,8 @@ a {
 }
 
 .gallery {
-  width: 530px;
-  height: 230px;
+  width: 400px;
+  height: 85%;
   border: 1px solid var(--line);
   border-radius: 15px;
   background-color: var(--container);
@@ -153,7 +155,7 @@ a {
     padding: 0 60px;
   }
 
-  .about {
+  .about, .skills, .projects {
     width: 100%;
   }
 
