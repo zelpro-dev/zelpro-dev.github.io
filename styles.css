@@ -116,6 +116,13 @@ a {
   flex-direction: column;
 }
 
+.rightnow ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  /* list-style-type: none; */
+}
+
 .rightnow li {
   font-size: small;
 }
@@ -160,6 +167,12 @@ a {
 #github-icon:hover, #linkedin-icon:hover, .about svg:hover {
   color: var(--white);
   transition: color 0.3s ease;
+}
+
+@media (max-width: 1370px) {
+  .projects, .rightnow, .more {
+    width: 60%;
+  }
 }
 
 @media (max-width: 1000px) {
