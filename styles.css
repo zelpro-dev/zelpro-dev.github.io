@@ -176,7 +176,9 @@ a {
 }
 
 @media (max-width: 1000px) {
-  /**/
+  .about, .skills, .projects, .rightnow, .more {
+    width: 80%;
+  }
 }
 
 @media (max-width: 750px) {
@@ -185,7 +187,7 @@ a {
   }
 
   .about, .skills, .projects, .rightnow, .more {
-    width: 100%;
+    width: 90%;
   }
 
 }
