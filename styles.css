@@ -89,6 +89,7 @@ a {
 
 .english-cert:hover {
   border-bottom: 1px solid;
+  transition: border-bottom 0.3s ease;
 }
 
 .container {
