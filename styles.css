@@ -87,6 +87,20 @@ a {
   transition: border-bottom 0.3s ease;
 }
 
+.project-link {
+  font-size: smaller;
+  font-weight: 300;
+  font-family: var(--font);
+  color: var(--white);
+  border-bottom: 1px transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.project-link:hover {
+  border-bottom: 1px solid;
+  transition: border-bottom 0.3s ease;
+}
+
 .english-cert:hover {
   border-bottom: 1px solid;
   transition: border-bottom 0.3s ease;
@@ -110,6 +124,13 @@ a {
   flex-direction: column;
   gap: 19px;
   width: 260px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  gap: 19px;
 }
 
 .rightnow {
@@ -139,6 +160,11 @@ a {
   justify-content: space-between;
 }
 
+.project-blocks {
+  display: flex;
+  gap: 39px;
+}
+
 .next-steps p, .next-steps i {
   color: var(--white-icon-tr);
 }
@@ -155,6 +181,7 @@ a {
 .icon, svg {
   font-size: x-large;
   color: var(--white-icon);
+  transition: color 0.3s ease;
 }
 
 .gallery {
