@@ -211,7 +211,7 @@ a {
 
 @media (max-width: 750px) {
   main, footer {
-    padding: 0 60px;
+    padding: 0 6px;
   }
 
   .about, .skills, .projects, .rightnow, .more {
