@@ -136,6 +136,7 @@ a {
 .rightnow {
   display: flex;
   flex-direction: column;
+  height: auto;
 }
 
 .rightnow ul {
@@ -165,7 +166,7 @@ a {
   gap: 39px;
 }
 
-.next-steps p, .next-steps i {
+.next-steps p, .next-steps i, .next-steps svg {
   color: var(--white-icon-tr);
 }
 
