@@ -4,9 +4,9 @@ import Container from '../components/Container.astro';
 ---
 
 <Layout title="Oscar Hernandez">
-	<div class="flex flex-row items-stretch justify-center mx-36">
-		<Container class="w-2/3">
-			<h3 class="text-2xl font-medium mb-4">About Me</h3>
+	<div class="flex flex-col lg:flex-row items-stretch justify-center mx-12 lg:mx-[10%]">
+		<Container class="lg:w-2/3 w-full">
+			<h3 class="text-2xl font-medium mb-9">About Me</h3>
 	
 			<p class="text-md leading-relaxed mb-4">
 				I'm a software developer with a strong focus on <strong class="font-medium">frontend solutions</strong>.
@@ -23,7 +23,7 @@ import Container from '../components/Container.astro';
 				</a>
 			</p>
 	
-			<div class="flex space-x-4 mt-6">
+			<div class="flex gap-2 mt-6">
 				<a href="https://github.com/Gothsec" target="_blank" aria-label="GitHub" class="text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-[--white]">
 					<i class="ri-github-fill text-3xl"></i>
 				</a>
@@ -37,8 +37,8 @@ import Container from '../components/Container.astro';
 				</a>
 			</div>
 		</Container>
-		<Container class="w-1/3 flex flex-col gap-4">
-			<h3 class="text-2xl font-medium mb-4">Skills</h3>
+		<Container class="w-full lg:w-1/3 flex flex-col gap-4">
+			<h3 class="text-2xl font-medium mb-4 ">Skills</h3>
   
 			<!-- Frontend Section -->
 			<div class="flex justify-between">
