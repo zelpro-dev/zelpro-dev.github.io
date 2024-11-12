@@ -1,6 +1,6 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,50 +8,82 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="icon" type="image/png" href="/favicon.png" />
-		<title>{title}</title>
-	</head>
-	<body class="bg-[--background] text-white">
-		<header class="flex items-center justify-center p-4">
-			<h1 class="text-3xl text-white my-9">Oscar Hernandez</h1>
-		</header>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-[--background] text-white">
+    <header class="flex items-center justify-center p-4">
+      <h1 class="text-3xl text-white my-9">Oscar Hernandez</h1>
+    </header>
+    <slot />
+  </body>
 </html>
 
 <style is:global>
-	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-	:root {
-		--background: #131313;
-		--container: #171717;
-		--line: #30303076;
-		
-		--white: #f3f3f3;
-		--pink: #ec9effcd;
-		--blue: #9efcffcd;
-		--green: #74fb65cd;
-		
-		--white-icon: #f3f3f398;
-		--white-icon-tr: #f3f3f34c;
+  :root {
+    --background: #131313;
+    --container: #171717;
+    --line: #30303076;
 
-		--font: "montserrat", system-ui, sans-serif;
-	}
+    --white: #f3f3f3;
+    --pink: #ec9effcd;
+    --blue: #9efcffcd;
+    --green: #74fb65cd;
 
-	* {
-		font-family: var(--font);
-		box-sizing: border-box;
-		padding: 0;
-		margin: 0;
-}
+    --white-icon: #f3f3f398;
+    --white-icon-tr: #f3f3f34c;
 
-	*::selection {
-		background-color: var(--line);
-		color: var(--pink);
-	}
+    --font: "montserrat", system-ui, sans-serif;
+  }
+
+  * {
+    font-family: var(--font);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  *::selection {
+    background-color: var(--line);
+    color: var(--pink);
+  }
+
+  /* Scrollbar styles */
+
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--container);
+    border-radius: 30px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--background);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--pink);
+  }
+
+  /* Scrollbar styles for Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--line) var(--container);
+  }
 </style>
