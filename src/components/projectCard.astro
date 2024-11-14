@@ -1,5 +1,5 @@
 ---
-import type { string } from 'astro:schema';
+import Button from "./button.astro";
 
 interface Props {
   title: string;
@@ -9,16 +9,21 @@ interface Props {
     useItalic?: boolean;
   }>;
   imageUrl: string;
+  codeUrl?: string;
+  demoUrl?: string;
 }
 
-const { title, description, technologies, imageUrl } = Astro.props;
+const { title, description, technologies, imageUrl, codeUrl, demoUrl } =
+  Astro.props;
 ---
 
-<div class="bg-[--line] rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+<div
+  class="bg-[--line] rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+>
   <div class="flex flex-col md:flex-row">
     <div class="md:w-1/3 md:h-full">
-      <img 
-        src={imageUrl} 
+      <img
+        src={imageUrl}
         alt={title}
         class="w-full h-48 md:h-full object-cover"
       />
@@ -27,12 +32,28 @@ const { title, description, technologies, imageUrl } = Astro.props;
       <h4 class="text-[--white] text-3xl font-semibold mb-2">{title}</h4>
       <p class="text-[--white-icon] mb-4">{description}</p>
       <div class="flex flex-wrap gap-4">
-        {technologies.map((tech) => (
-          <span 
-            class="flex items-center gap-1 text-[--white-icon]"
-            set:html={tech.icon ? tech.icon : ''}
-          />
-        ))}
+        {
+          technologies.map((tech) => (
+            <span
+              class="flex items-center gap-1 text-[--white-icon]"
+              set:html={tech.icon ? tech.icon : ""}
+            />
+          ))
+        }
+      </div>
+      <div class="flex flex-col md:flex-row gap-4 mt-4">
+        <Button href={codeUrl}>
+          <i class="ri-code-s-slash-line text-[--white-icon] text-xl mr-2"></i>
+          View Code
+        </Button>
+        {
+          demoUrl && (
+            <Button href={demoUrl}>
+              <i class="ri-window-2-line text-[--white-icon] text-xl mr-2" />
+              Live Demo
+            </Button>
+          )
+        }
       </div>
     </div>
   </div>
