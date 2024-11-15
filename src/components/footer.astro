@@ -1,0 +1,67 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+<footer>
+  <div class="max-w-6xl mx-auto px-4 pt-14 pb-8">
+    <div class="flex flex-col items-center space-y-4">
+      <!-- Social Links -->
+      <div class="flex space-x-6">
+        <a 
+          href="https://github.com/Gothsec" 
+          class="text-gray-400 hover:text-white transition-colors duration-200"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub Profile"
+        >
+          <i class="ri-github-fill text-xl"></i>
+        </a>
+        <a 
+          href="https://www.linkedin.com/in/hernandezoscar-dev/" 
+          class="text-gray-400 hover:text-white transition-colors duration-200"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn Profile"
+        >
+          <i class="ri-linkedin-fill text-xl"></i>
+        </a>
+        <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=oscarandreshernandezpineda@gmail.com&su=Hey%20Oscar!"
+        target="_blank"
+        aria-label="Gmail"
+        class="text-gray-400 hover:text-white transition-colors duration-200"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 -4 24 24"
+          class="text-xl"
+        >
+          <path
+            fill="currentColor"
+            d="m18.73 5.41l-1.28 1L12 10.46L6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64"
+          ></path>
+        </svg>
+      </a>
+      </div>
+      
+      <!-- Main Footer Text -->
+      <div class="flex items-center space-x-2">
+        <span class="text-gray-400">Made with 🖤 by</span>
+        <p
+          class="text-gray-400 hover:text-gray-300 transition-colors duration-200"
+        >
+          Oscar Hernandez
+        </p>
+      </div>
+      
+      <!-- Copyright -->
+      <p class="text-sm text-gray-500">
+        © {currentYear} All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
