@@ -2,6 +2,9 @@
 import Button from "./button.astro";
 import ProjectCard from "./projectCard.astro";
 
+import stockinImage from '../assets/img/stockin.png';
+import defaultImage from '../assets/img/default.png';
+
 const projects = [
   {
     title: "StockIn",
@@ -17,7 +20,7 @@ const projects = [
         icon: '<i class="ri-supabase-fill text-2xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
       },
     ],
-    imageUrl: "../../public/img/stockin.png",
+    imageUrl: stockinImage,
     codeUrl: "https://github.com/Gothsec/stockin",
     demoUrl: "https://stockin.gothsec.workers.dev/",
   },
@@ -32,7 +35,7 @@ const projects = [
         icon: '<i class="ri-supabase-fill text-2xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
       },
     ],
-    imageUrl: "../../public/img/default.png",
+    imageUrl: defaultImage,
   },
   {
     title: "Coming soon",
@@ -45,7 +48,7 @@ const projects = [
         icon: '<i class="ri-supabase-fill text-2xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
       },
     ],
-    imageUrl: "../../public/img/default.png",
+    imageUrl: defaultImage,
   },
 ];
 ---
