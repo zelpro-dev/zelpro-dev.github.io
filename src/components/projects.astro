@@ -1,0 +1,64 @@
+---
+import Button from "./button.astro";
+import Container from "./container.astro";
+import ProjectCard from "./projectCard.astro";
+
+const projects = [
+  {
+    title: "StockIn",
+    description: "Inventory management system for Pymes",
+    technologies: [
+      {
+        icon: '<i class="ri-reactjs-fill text-3xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
+      },
+      {
+        icon: '<i class="ri-tailwind-css-fill text-3xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
+      },
+      {
+        icon: '<i class="ri-supabase-fill text-2xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
+      },
+    ],
+    imageUrl: "../../public/img/stockin.png",
+    codeUrl: "https://github.com/Gothsec/stockin",
+    demoUrl: "https://stockin.gothsec.workers.dev/",
+  },
+  {
+    title: "Coming soon",
+    description: "Coming soon",
+    technologies: [
+      {
+        icon: '<i class="ri-nextjs-fill text-3xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
+      },
+      {
+        icon: '<i class="ri-supabase-fill text-2xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
+      },
+    ],
+    imageUrl: "../../public/img/default.png",
+  },
+  {
+    title: "Coming soon",
+    description: "Coming soon",
+    technologies: [
+      {
+        icon: '<i class="ri-nextjs-fill text-3xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
+      },
+      {
+        icon: '<i class="ri-supabase-fill text-2xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
+      },
+    ],
+    imageUrl: "../../public/img/default.png",
+  },
+];
+---
+
+<Container class="w-full flex flex-col gap-4">
+  <h3 class="text-2xl font-medium mb-4">My Projects</h3>
+  <div class="flex flex-col gap-6">
+    {projects.map((project) => <ProjectCard {...project} />)}
+
+    <Button href="https://github.com/Gothsec?tab=repositories">
+      Look all my projects on <i
+        class="ri-github-fill mx-2 text-2xl text-[--white-icon]"></i>
+    </Button>
+  </div>
+</Container>
