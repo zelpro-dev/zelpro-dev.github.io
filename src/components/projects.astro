@@ -1,6 +1,5 @@
 ---
 import Button from "./button.astro";
-import Container from "@/components/container.astro";
 import ProjectCard from "./projectCard.astro";
 
 const projects = [
@@ -51,7 +50,7 @@ const projects = [
 ];
 ---
 
-<Container class="w-full flex flex-col gap-4">
+<section class="rounded-3xl bg-[--container] border-2 border-[--line] p-8 m-2 hover:border-[--white-icon-tr] transition-all duration-700 ease-in-out w-full flex flex-col gap-4">
   <h3 class="text-2xl font-medium mb-4">My Projects</h3>
   <div class="flex flex-col gap-6">
     {projects.map((project) => <ProjectCard {...project} />)}
@@ -61,4 +60,4 @@ const projects = [
         class="ri-github-fill mx-2 text-2xl text-[--white-icon]"></i>
     </Button>
   </div>
-</Container>
+</section>
