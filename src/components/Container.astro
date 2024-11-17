@@ -1,5 +1,9 @@
 ---
-const { class: customClass } = Astro.props;
+interface Props {
+  class?: string;
+}
+
+const { class: customClass = '' } = Astro.props;
 ---
 
 <section
