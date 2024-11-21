@@ -2,8 +2,9 @@
 import Button from "./button.astro";
 import ProjectCard from "./projectCard.astro";
 
-import stockinImage from '../assets/img/stockin.png';
-import defaultImage from '../assets/img/default.png';
+import stockinImage from "../assets/img/stockin.png";
+import breakEvenImage from "../assets/img/break-even-cal.png";
+import defaultImage from "../assets/img/default.png";
 
 const projects = [
   {
@@ -25,17 +26,23 @@ const projects = [
     demoUrl: "https://stockin.gothsec.workers.dev/",
   },
   {
-    title: "Coming soon",
-    description: "Coming soon",
+    title: "Break-even Calculator",
+    description:
+      "Calculate the break-even point of a business, with the income of the units and the cost of the variables.",
     technologies: [
       {
-        icon: '<i class="ri-nextjs-fill text-3xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
+        icon: '<i class="ri-html5-fill text-3xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
       },
       {
-        icon: '<i class="ri-supabase-fill text-2xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
+        icon: '<i class="ri-css3-fill text-3xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
+      },
+      {
+        icon: '<i class="ri-javascript-fill text-3xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
       },
     ],
-    imageUrl: defaultImage,
+    imageUrl: breakEvenImage,
+    codeUrl: "https://github.com/Gothsec/Calculadora-de-Punto-de-Equilibrio",
+    demoUrl: "https://calculadora-de-punto-de-equilibrio.vercel.app/",
   },
   {
     title: "Coming soon",
@@ -53,7 +60,9 @@ const projects = [
 ];
 ---
 
-<section class="rounded-3xl bg-[--container] border-2 border-[--line] p-8 m-2 hover:border-[--white-icon-tr] transition-all duration-700 ease-in-out w-full flex flex-col gap-4">
+<section
+  class="rounded-3xl bg-[--container] border-2 border-[--line] p-8 m-2 hover:border-[--white-icon-tr] transition-all duration-700 ease-in-out w-full flex flex-col gap-4"
+>
   <h3 class="text-2xl font-medium mb-4">My Projects</h3>
   <div class="flex flex-col gap-6">
     {projects.map((project) => <ProjectCard {...project} />)}
