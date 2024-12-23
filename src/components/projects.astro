@@ -7,6 +7,21 @@ import breakEvenImage from "../assets/img/break-even-cal.png";
 import defaultImage from "../assets/img/default.png";
 
 const projects = [
+{
+    title: "Svgl.app (contribuitor)",
+    description: "A beautiful library with SVG logos. Built with Sveltekit & Tailwind CSS.",
+    technologies: [
+      {
+        icon: '<i class="ri-svelte-fill text-3xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
+      },
+      {
+        icon: '<i class="ri-tailwind-css-fill text-3xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
+      },
+    ],
+    imageUrl: defaultImage,
+    codeUrl: "https://github.com/pheralb/svgl",
+    demoUrl: "https://svgl.app/",
+  },
   {
     title: "StockIn",
     description: "Inventory management system for Pymes",
@@ -21,7 +36,7 @@ const projects = [
         icon: '<i class="ri-supabase-fill text-2xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
       },
     ],
-    imageUrl: stockinImage,
+    imageUrl: defaultImage,
     codeUrl: "https://github.com/Gothsec/stockin",
   },
   {
@@ -39,22 +54,9 @@ const projects = [
         icon: '<i class="ri-javascript-fill text-3xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
       },
     ],
-    imageUrl: breakEvenImage,
+    imageUrl: defaultImage,
     codeUrl: "https://github.com/Gothsec/Calculadora-de-Punto-de-Equilibrio",
     demoUrl: "https://calculadora-de-punto-de-equilibrio.vercel.app/",
-  },
-  {
-    title: "Coming soon",
-    description: "Coming soon",
-    technologies: [
-      {
-        icon: '<i class="ri-nextjs-fill text-3xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
-      },
-      {
-        icon: '<i class="ri-supabase-fill text-2xl text-[--white-icon] transition-colors duration-300 ease-in-out hover:text-white"></i>',
-      },
-    ],
-    imageUrl: defaultImage,
   },
 ];
 ---
