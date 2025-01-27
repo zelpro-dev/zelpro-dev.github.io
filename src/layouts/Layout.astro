@@ -51,8 +51,10 @@ const { title } = Astro.props;
           hour12: true
         });
 
-        timeElement.textContent = `${dateString} · ${timeString}`;
-        timeElement.setAttribute('datetime', now.toISOString());
+        if (timeElement != null) {
+          timeElement.textContent = `${dateString} · ${timeString}`;
+          timeElement.setAttribute('datetime', now.toISOString());
+        }
       }
 
       updateDateTime();
