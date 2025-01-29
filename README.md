@@ -3,4 +3,7 @@ v1 (HTML5 - CSS3) | Oct 2, 2024
 
 v2 (Astro) | Nov 16 2024
 ![image](https://github.com/user-attachments/assets/72553bdd-11e4-4961-b38f-95e20cefc359)
-![image](https://github.com/user-attachments/assets/107f4c5c-a0fb-4fc7-9d33-130f66f603d3)
+
+v3 (Astro) | Jan 27 2025
+![image](https://github.com/user-attachments/assets/3815f75e-c003-4495-8636-73922d6712d7)
+
