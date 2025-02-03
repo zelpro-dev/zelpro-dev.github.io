@@ -23,43 +23,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-[--background] text-white">
-    <header class="flex flex-col sm:flex-row items-center justify-between p-4 my-6 mx-4 md:mx-[20%]">
-      <div class="flex flex-col sm:flex-row items-center sm:gap-4 md:gap-4">
-        <h1 class="text-3xl text-[#ffffffc1] my-2 md:my-9">Oscar Hernandez</h1>
-        <span class="text-[#ffffff60] text-lg mt-1 md:text-xl">Software Developer</span>
-      </div>
-      <div class="text-[#ffffff70] text-sm hidden lg:block">
-        <time id="current-time"></time>
-      </div>
-    </header>
     <slot />
-
-    <script>
-      function updateDateTime() {
-        const timeElement = document.getElementById('current-time');
-        const now = new Date();
-        
-        const dateString = now.toLocaleDateString('en-US', {
-          weekday: 'long',
-          month: 'long',
-          day: 'numeric'
-        });
-        
-        const timeString = now.toLocaleTimeString('en-US', {
-          hour: '2-digit',
-          minute: '2-digit',
-          hour12: true
-        });
-
-        if (timeElement != null) {
-          timeElement.textContent = `${dateString} · ${timeString}`;
-          timeElement.setAttribute('datetime', now.toISOString());
-        }
-      }
-
-      updateDateTime();
-      setInterval(updateDateTime, 1000);
-    </script>
   </body>
 </html>
 
