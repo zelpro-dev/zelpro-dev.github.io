@@ -22,7 +22,7 @@ const { title } = Astro.props;
     <link rel="icon" type="image/png" href="/favicon.png" />
     <title>{title}</title>
   </head>
-  <body class="bg-[--background] text-white">
+  <body class="bg-[--background] md:px-48 lg:px-20 px-9">
     <slot />
   </body>
 </html>
@@ -31,19 +31,14 @@ const { title } = Astro.props;
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
   :root {
-    --background: #131313;
-    --container: #171717;
-    --line: #30303076;
+    --background: #101010;
+
+    --sec: #A476FF;
 
     --white: #f3f3f3;
-    --pink: #ec9effcd;
-    --blue: #9efcffcd;
-    --green: #74fb65cd;
 
     --white-icon: #f3f3f398;
-    --white-icon-tr: #f3f3f34c;
-
-    --tooltip: #2a2a2a;
+    --white-icon-tr: #f3f3f310;
 
     --font: "montserrat", system-ui, sans-serif;
   }
@@ -56,8 +51,8 @@ const { title } = Astro.props;
   }
 
   *::selection {
-    background-color: var(--line);
-    color: var(--pink);
+    background-color: var(--sec);
+    color: var(--background);
   }
 
   /* Scrollbar styles */
