@@ -18,5 +18,9 @@ export default defineConfig({
   output: 'static',
   build: {
     inlineStylesheets: 'auto'
+  },
+  server: {
+    host: true,
+    port: 4321,
   }
 });
