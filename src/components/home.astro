@@ -1,5 +1,6 @@
 ---
 import LetterGlitch from "../../letterGlitch/LetterGlitch.tsx";
+import LogoWall from "../components/logoWall.astro";
 ---
 
 <section class="text-[var(--white)] mt-12 md:mt-0" id="home">
@@ -37,6 +38,8 @@ import LetterGlitch from "../../letterGlitch/LetterGlitch.tsx";
         </a>
       </div>
     </div>
+
+    <LogoWall />
   
 
       <!-- "What I do?"-->
@@ -56,7 +59,7 @@ import LetterGlitch from "../../letterGlitch/LetterGlitch.tsx";
     </div>
 </section>
 
-<style>
+<style is:global>
 .shiny-sec {
     background: linear-gradient(
         135deg,
