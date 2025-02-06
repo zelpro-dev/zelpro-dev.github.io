@@ -50,7 +50,14 @@ import LogoWall from "../components/logoWall.astro";
           </ul>
         </div>
         <div class="flex justify-center h-[13rem] w-full pt-3 md:pt-9 md:ml-16">
-          <LetterGlitch client:load />
+          <LetterGlitch 
+            client:load
+            glitchColors={["#5e4491", "#A476FF", "#241a38"]}
+            glitchSpeed={33}
+            centerVignette={false}
+            outerVignette={false}
+            smooth={true}
+          />
         </div>
       </div>
     </div>
