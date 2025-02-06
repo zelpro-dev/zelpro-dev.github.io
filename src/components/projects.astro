@@ -5,7 +5,7 @@ import stockin from "../../public/stockin.png";
 
 interface Project {
   title: string;
-  image: string | ImageMetadata;
+  image: ImageMetadata;
   link: string;
   preview: string;
   status: string;
@@ -14,14 +14,14 @@ interface Project {
 const projects: Project[] = [
   {
     title: "StockIn",
-    image: stockin,
+    image: stockin as ImageMetadata,
     link: "https://github.com/gothsec/stockin-demo",
     preview: "https://stockin-demo.vercel.app",
     status: "In Development",
   },
   {
     title: "Svgl.app",
-    image: svgl,
+    image: svgl as ImageMetadata,
     link: "https://github.com/pheralb/svgl",
     preview: "https://svgl.app",
     status: "Contributor",
