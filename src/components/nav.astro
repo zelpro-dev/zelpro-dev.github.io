@@ -56,19 +56,19 @@ const navItems: NavItem[] = [
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
 
-      if (e.currentTarget) {
-        const target = e.currentTarget as HTMLAnchorElement;
-        const targetId = target.getAttribute("href")?.substring(1) || "";
+      const target = e.currentTarget as HTMLAnchorElement;
+      const targetId = target.getAttribute("href")?.substring(1) || "";
+      const targetElement = document.getElementById(targetId);
 
-        if (targetElement) {
+      if (targetElement) {
         targetElement.scrollIntoView({
           behavior: "smooth",
         });
-        }
       }
     });
   });
 </script>
+
 
 <style>
   @media (max-width: 767px) {
