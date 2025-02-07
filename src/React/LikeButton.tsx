@@ -38,7 +38,7 @@ const LikeButton: React.FC = () => {
     setTriggerAnimation(true);
     setTimeout(() => {
       setTriggerAnimation(false);
-    }, 300); // Duración de la animación en milisegundos
+    }, 300);
   };
 
   const handleLike = async () => {
@@ -63,7 +63,6 @@ const LikeButton: React.FC = () => {
 
   if (!isClient) return null;
 
-  // Aquí definimos el color del borde de forma condicional sin duplicidad
   const borderColorClass = isLiked
     ? 'border-[var(--sec)]'
     : 'border-[var(--white-icon-tr)]';
