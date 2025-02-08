@@ -19,10 +19,11 @@ Demo: https://oscarhernandez.vercel.app/
 ## **Project structure**
 ```
 public/
+└── svg/
 src/
 ├── Components/
 ├── layouts/
-├── LetterGlitch/
+├── React/
 └── pages/
 ```
 
