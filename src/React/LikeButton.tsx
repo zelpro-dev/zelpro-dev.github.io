@@ -65,7 +65,7 @@ const LikeButton: React.FC = () => {
 
   const borderColorClass = isLiked
     ? 'border-[var(--sec)]'
-    : 'border-[var(--white-icon-tr)]';
+    : 'border-[var(--white-icon)]';
 
   const svgClasses = `
     w-6 h-6 transition-all duration-300 ease-in-out 
@@ -80,7 +80,8 @@ const LikeButton: React.FC = () => {
         className={`
           group relative w-40 h-10 flex items-center justify-center p-3
           rounded-full transition-all duration-300 ease-in-out transform border-2 ${borderColorClass}
-          md:hover:border-[var(--white)]
+          ${!isLiked ? "md:hover:border-[var(--white)]" : ""}
+          ${triggerAnimation ? ' animate-scale' : ''}
         `}
       >
         <svg 
