@@ -50,7 +50,7 @@ const SkillsList = () => {
                 {CategoryIcons[category]}
                 <div className="flex items-center gap-2 flex-grow justify-between">
                   <div className="min-w-0 max-w-[200px] md:max-w-none overflow-hidden">
-                    <span className="block truncate text-[var(--white)] md:text-lg text-sm">
+                    <span className="block truncate text-[var(--white)] text-lg">
                       {category}
                     </span>
                   </div>
