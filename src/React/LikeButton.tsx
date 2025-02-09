@@ -8,6 +8,7 @@ const LikeButton: React.FC = () => {
   const [isClient, setIsClient] = useState(false);
   const [triggerAnimation, setTriggerAnimation] = useState(false);
   const [animateLikes, setAnimateLikes] = useState(false);
+  const [isProcessing, setIsProcessing] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
@@ -41,12 +42,15 @@ const LikeButton: React.FC = () => {
   };
 
   const handleLike = async () => {
+    if (isProcessing) return;
+
     if (isLiked) {
       triggerLikeAnimation();
       return;
     }
 
     try {
+      setIsProcessing(true);
       const likeDocRef = doc(db, 'likes', 'counter');
       await updateDoc(likeDocRef, {
         likes: increment(1)
@@ -56,6 +60,8 @@ const LikeButton: React.FC = () => {
       triggerLikeAnimation();
     } catch (error) {
       console.error("Error updating likes:", error);
+    } finally {
+      setIsProcessing(false);
     }
   };
 
@@ -75,6 +81,7 @@ const LikeButton: React.FC = () => {
     <div className="flex items-center">
       <button 
         onClick={handleLike}
+        disabled={isProcessing}
         className={`
           group relative w-40 h-10 flex items-center justify-center p-3
           rounded-full transition-all duration-300 ease-in-out transform border-2 ${borderColorClass}
