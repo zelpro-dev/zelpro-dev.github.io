@@ -1,6 +1,6 @@
 # Portfolio
 Developed with passion while listening to _Hurry Up Tomorrow by The Weeknd_. Completed in just 3 days.
-![image](https://github.com/user-attachments/assets/c6c5a107-0eaf-42c2-b8ef-27422d676799)
+![OscarHernandez-portfolio](https://github.com/user-attachments/assets/e284a42b-15c5-495c-99c7-ad5c1eb3bbe7)
 [![Deploy Status](https://img.shields.io/badge/Deploy-Vercel-black?style=flat&logo=vercel)](tu-url-deploy)  
 
 ---
