@@ -6,6 +6,12 @@ Developed with passion while listening to _Hurry Up Tomorrow by The Weeknd_. Com
 ---
 Demo: https://oscarhernandez.vercel.app/
 
+Astro themes: https://astro.build/themes/details/dark-minimal/
+
+The component `<LetterGlitch \>` was taken from [ReactBits](https://www.reactbits.dev/)
+
+This portfolio is also on the [ReactBits Showcase](https://www.reactbits.dev/showcase) 
+
 ## **Stack**  
 ### **Frontend**  
 ![Astro](https://img.shields.io/badge/Astro-FF5D01?logo=astro&logoColor=white)
