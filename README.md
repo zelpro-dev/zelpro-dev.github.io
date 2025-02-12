@@ -4,11 +4,11 @@ Developed with passion while listening to _Hurry Up Tomorrow by The Weeknd_. Com
 [![Deploy Status](https://img.shields.io/badge/Deploy-Vercel-black?style=flat&logo=vercel)](tu-url-deploy)  
 
 ---
-Demo: https://oscarhernandez.vercel.app/
+[Demo](https://oscarhernandez.vercel.app/)
 
-Astro themes: https://astro.build/themes/details/dark-minimal/
+[Astro Themes](https://astro.build/themes/details/dark-minimal/)
 
-The component `<LetterGlitch \>` was taken from [ReactBits](https://www.reactbits.dev/)
+The component `<LetterGlitch \>` was taken from [ReactBits.dev](https://www.reactbits.dev/)
 
 This portfolio is also on the [ReactBits Showcase](https://www.reactbits.dev/showcase) 
 
