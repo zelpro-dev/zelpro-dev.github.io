@@ -15,6 +15,18 @@ Demo: https://oscarhernandez.vercel.app/
 ### **Tools**  
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
 ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?logo=prettier&logoColor=black)
+![Canva](https://img.shields.io/badge/Canva-c900c3?logo=canva&logoColor=white)
+
+### **Show your favorite Spotify album (or your own)** ![Spotify](https://img.shields.io/badge/Spotify-06cc1a?logo=spotify&logoColor=white)
+1. Choose your Spotify album
+2. Access the share options
+3. Select 'copy embed code'
+```
+<iframe src="https://open.spotify.com/embed/album/ALBUM_ID" style="border-radius:12px border:0;" class="w-full h-40" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+```
+4. Insert the embed code on footer.astro
+
+That's it!
 
 ## **Project structure**
 ```
